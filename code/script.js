@@ -50,7 +50,7 @@ function drawShapes() {
 function animate() {
     updateShapes();
     drawShapes();
-    if (Math.random() < 0.05) shapes.push(createShape());
+    if (Math.random() < 0.02) shapes.push(createShape());
     requestAnimationFrame(animate);
 }
 
