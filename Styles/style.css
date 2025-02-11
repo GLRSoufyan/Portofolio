@@ -1,0 +1,19 @@
+body {
+    background-image: url(/pictures/Background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #1D4D77;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+}
+
+.border {
+    background-color: #1d4d7720;
+    border: #1d4d774d, solid, 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
