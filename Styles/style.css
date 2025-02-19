@@ -22,10 +22,6 @@ body {
     width: 10px;
 }
 
-::-webkit-scrollbar-track {
-    background: transparent;
-}
-
 ::-webkit-scrollbar-thumb {
     background: #1D4D77;
     border-radius: 5px;
