@@ -1,8 +1,7 @@
 body {
-    background-image: url(/pictures/Background.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #1D4D77;
+    background: linear-gradient(to bottom, #000000, #174369);
+    font-family: "ROBOTO", sans-serif;
+    color: #4f7794;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -11,11 +10,56 @@ body {
     justify-content: center;
 }
 
-.border {
-    background-color: #1d4d7720;
+a {
+    color: #5984a5;
+}
+a:hover {
+    color: #000000;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-weight: bold;
+    transition-duration: 1s;
+}
+
+button {
+    background-color: #0f283f9c;
     border: #1d4d774d, solid, 5px;
     border-radius: 5px;
-    margin-bottom: 15px;
+    color: #4f7794;
+}
+
+.border {
+    background-color: #0f283f9c;
+    border: #1d4d774d, solid, 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    color: #4f7794;
+}
+
+nav {
+    margin-top: 5px;
+}
+
+small{
+    margin-top: 15px;
+}
+
+#discord {
+    width: 5%;
+    height: inherit;
+    padding-top: 1%;
+}
+
+#roblox {
+    width: 3.5%;
+    height: inherit;
+    padding-bottom: .7%;
+}
+
+#backgroundimg {
+    z-index: -2;
+    position: fixed;
+    width: -webkit-fill-available;
+    height: inherit;
 }
 
 ::-webkit-scrollbar {
@@ -28,5 +72,5 @@ body {
 }
 
 * {
-    scrollbar-color: #1D4D77 transparent;
+    scrollbar-color: #1D4D77 #000000;
 }

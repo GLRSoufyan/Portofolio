@@ -1,3 +1,16 @@
+gsap.to("#backgroundimg", {
+    scale: 1.5,
+    opacity: 0,
+    duration: 10,
+    yoyo: true,
+    ease: "sine.inOut",
+    repeat: -1
+});
+
+gsap.from(".border", { duration: 1, y: -100, opacity: 0, ease: "bounce" });
+gsap.from("nav", { duration: 1, y: -100, opacity: 0, ease: "bounce" });
+gsap.from(".section", { duration: 1, opacity: 0, stagger: 0.3, ease: "power1.inOut" });
+
 const canvas = document.createElement('canvas');
 canvas.style.position = 'fixed';
 canvas.style.top = '0';
@@ -50,7 +63,7 @@ function drawShapes() {
 function animate() {
     updateShapes();
     drawShapes();
-    if (Math.random() < 0.02) shapes.push(createShape());
+    if (Math.random() < .1) shapes.push(createShape());
     requestAnimationFrame(animate);
 }
 
